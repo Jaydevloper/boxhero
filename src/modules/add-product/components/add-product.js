@@ -1,4 +1,4 @@
-import {  useRef    } from "react";
+import {  useRef, useState    } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import '../../add/components/add-product.scss';
 import '../../../components/header/site-header.scss';
@@ -13,6 +13,7 @@ function Addproduct (){
     const secondRef = useRef()
     const typeRef = useRef()
     const quantilyRef = useRef()
+    const [open,setOpen] = useState(false);
     function generateCode(e){
         e.preventDefault()
         codeRef.current.value = Math.floor(Math.random()*10e13)
@@ -48,6 +49,10 @@ function Addproduct (){
             else toast.error(data.error)
         })
     }
+    const logout = () =>{
+        localStorage.removeItem("token");
+        window.location.reload()
+     }
     return(
         <>
              <header className='site-header'>
@@ -59,7 +64,8 @@ function Addproduct (){
                     <div className="site-header__right">
                             <button className="site-header__btn">On Free Trial</button>
                             <Link className="site-header__help" to={'/'}>Help</Link>
-                            <button className="site-header__profil"></button>
+                            <button className="site-header__profil" onClick={() => setOpen(!open)}></button>
+                            <button className={open?'site-header__logout':'site-header__logout--close'} onClick={logout}>Log out</button>
                     </div>
                     </div>  
         </header>

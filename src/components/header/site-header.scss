@@ -144,9 +144,8 @@
     .site-header__list{
         margin-top: 40px;
     }
-}
-@keyframes modal {
-    to{
-        top: 65px;
+    .site-header__logout{
+        top: 120px;
+        right: 62px;
     }
 }

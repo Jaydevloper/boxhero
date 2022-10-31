@@ -13,6 +13,7 @@ function Add (){
     const secondRef = useRef()
     const typeRef = useRef()
     const navigate = useNavigate()
+    const [opens,setOpens] = useState(false)
     const [open,setOpen] = useState(false)
     const {data} = useContext(Context);
         let current = data.Data.find(el => el._id === params.id)
@@ -70,6 +71,10 @@ function Add (){
             }
         })
     }
+    const logout = () =>{
+        localStorage.removeItem("token");
+        window.location.reload()
+     }
     return(
         <>  
         <header className='site-header'>
@@ -81,7 +86,8 @@ function Add (){
                     <div className="site-header__right">
                             <button className="site-header__btn">On Free Trial</button>
                             <Link className="site-header__help" to={'/'}>Help</Link>
-                            <button className="site-header__profil"></button>
+                            <button className="site-header__profil" onClick={() => setOpens(!opens)}></button>
+                            <button className={opens?'site-header__logout':'site-header__logout--close'} onClick={logout}>Log out</button>
                     </div>
                     </div>  
         </header>
