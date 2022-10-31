@@ -1,0 +1,37 @@
+@import '../asset/scss/mixin.scss';
+body{
+    background-color: #fff;
+}
+.site-main{
+    padding-top: 10px;
+    background-color: #fff;
+}
+.site-main__list{
+    @include list-unstyel;
+}
+.site-main__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    text-decoration: none;
+}
+.site-main__wrraper{
+
+}
+.site-main__name{
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+}
+.site-main__page{
+    margin-top: 2px;
+    color: #8f91a0;
+    font-size: 12px;
+    line-height: 18px;
+}
+.site-main__quality{
+    font-size: 14px;
+    font-weight: 500;
+    color: #4f67ff;
+}

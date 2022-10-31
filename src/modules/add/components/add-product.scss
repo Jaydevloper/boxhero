@@ -1,0 +1,135 @@
+@import "../../../asset/scss/mixin.scss";
+.add-product{
+    padding-top: 53px;
+    background-color: #fff;
+}
+.add-product__pro{
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.add-product__product{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8f91a0;
+}
+.add-product__head{
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+.add-product__inform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.6);
+}
+.add-product__info{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.add-product__btn{
+    margin-right: 8px;
+    padding: 7px 9px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #cbccd3;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    &--link{
+        text-decoration: none;
+        color: #000;
+    }
+    &--open{
+        margin-top: 10px;
+        display: block;
+        text-decoration: none;
+        color: #000;
+        width: 57px;
+    }
+}
+.add-product__section{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cbccd3;
+}
+.add-product__more{
+    font-size: 14px;
+    line-height: 20px;
+    &--page{
+        width: 127px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+}
+.add-product__img{
+    position: absolute;
+    z-index: 1;
+    width: 92px;
+    height: 92px;
+    right: calc(50% + -208px);
+    border-radius: 12px;
+    background-color: #f1f1f4;
+    cursor: pointer;
+}
+.add-product__more-wrraper{
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--open{
+        max-width: 780px;
+    }
+}
+.add-product__border{
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #cbccd3;
+}
+.add-product__quantily-head{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+.add-product__inpt{
+    width: 664px;
+    padding: 7px 9px;
+    border: 1px solid #cbccd3;
+    border-radius: 6px;
+    outline-color: #80e5ff;
+}
+.add-product__generator{
+    position: relative;
+    z-index: 2;
+    margin-left: 8px;
+    padding: 7px 9px;
+    color: #fff;
+    border: 1px solid #cbccd3;
+    border-radius: 6px;
+    background-color: #37b047;
+    border-color: #2b9a3a;
+}
+.add-product__btn-wrraper{
+    display: flex;
+    align-items: center;
+}
+.add-product__edit{
+    margin-right: 6px;
+    border-radius: 6px;
+    padding: 7px 9px;
+    border: 1px solid #cbccd3;
+    color: #fff;
+    background-color: #4f67ff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+}
+@include media(470px){
+    .add-product__head{
+        margin-top: 20px;
+    }
+}
