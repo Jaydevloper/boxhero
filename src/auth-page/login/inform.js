@@ -23,9 +23,7 @@ function Inform (){
                 window.location.reload()
                 console.log(data)
             } else {
-                toast.error(data.error, {
-                    position: toast.POSITION.TOP_RIGHT
-                });
+                toast.error("User already exsist!");
             }
         })
     }
