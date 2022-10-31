@@ -22,7 +22,7 @@ function Addproduct (){
         e.preventDefault();
    
         let token = localStorage.getItem("token");
-        const url = `http://localhost:5000/create`;  
+        const url = `https://boxherr.herokuapp.com/create`;  
         fetch(url,{
             method:"POST",
             headers:{"Content-Type":"application/json"},

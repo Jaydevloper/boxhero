@@ -15,7 +15,7 @@ function Header (){
  }
 function handlerSubmit(e){
     e.preventDefault();
-    const url = `http://localhost:5000/${token}/${searchRef.current.value}`;
+    const url = `https://boxherr.herokuapp.com/${token}/${searchRef.current.value}`;
      fetch(url)
      .then(res => res.json())
      .then(data => setSearch(data)) 

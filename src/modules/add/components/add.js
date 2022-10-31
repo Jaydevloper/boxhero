@@ -24,7 +24,7 @@ function Add (){
     }
     function editUser(e){
         e.preventDefault();
-        const url = `http://localhost:5000/edit/${current._id}`;
+        const url = `https://boxherr.herokuapp.com/edit/${current._id}`;
         fetch(url,{
             method:"PUT",
             headers:{"Content-Type":"application/json"},
@@ -52,7 +52,7 @@ function Add (){
         })
     }
     function deleteClick(){
-        const url = `http://localhost:5000/delete/${current._id}/${token}`;
+        const url = `https://boxherr.herokuapp.com/delete/${current._id}/${token}`;
         fetch(url,{
             method:"DELETE",
         })

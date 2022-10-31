@@ -6,7 +6,7 @@ function Inform (){
     const emailRef = useRef()
     function handlerSubmit(e){
         e.preventDefault()
-        fetch('http://localhost:5000/login',{
+        fetch('https://boxherr.herokuapp.com/login',{
             method:"POST",
             headers:{"Content-Type" : "application/json"},
             body:JSON.stringify({
