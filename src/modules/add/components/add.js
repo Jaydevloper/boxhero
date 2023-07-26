@@ -25,7 +25,7 @@ function Add (){
     }
     function editUser(e){
         e.preventDefault();
-        const url = `https://boxherr.herokuapp.com/edit/${current._id}`;
+        const url = `https://boxhero.onrender.com/edit/${current._id}`;
         fetch(url,{
             method:"PUT",
             headers:{"Content-Type":"application/json"},
@@ -53,7 +53,7 @@ function Add (){
         })
     }
     function deleteClick(){
-        const url = `https://boxherr.herokuapp.com/delete/${current._id}/${token}`;
+        const url = `https://boxhero.onrender.com/delete/${current._id}/${token}`;
         fetch(url,{
             method:"DELETE",
         })

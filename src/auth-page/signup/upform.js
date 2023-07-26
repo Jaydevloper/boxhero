@@ -7,7 +7,7 @@ function Upform (){
     const emailRef = useRef()
     function handlerSubmit(e){
         e.preventDefault()
-        fetch('https://boxherr.herokuapp.com/signup',{
+        fetch('https://boxhero.onrender.com/signup',{
             method:"POST",
             headers:{"Content-Type" : "application/json"},
             body:JSON.stringify({
